@@ -1,0 +1,24 @@
+// Minimum of two Numbers
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+
+    int min;
+
+    if (a <= b && a <= c)
+        min = a;
+    else if (b <= a && b <= c)
+        min = b;
+    else
+        min = c;
+
+    cout << "Minimum number is: " << min;
+
+    return 0;
+}

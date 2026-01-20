@@ -1,0 +1,24 @@
+// Maximum of three numbers
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+
+    int max;
+
+    if (a >= b && a >= c)
+        max = a;
+    else if (b >= a && b >= c)
+        max = b;
+    else
+        max = c;
+
+    cout << "Maximum number is: " << max;
+
+    return 0;
+}
