@@ -18,7 +18,7 @@ int main()
     else if (marks >= 60 && marks < 70)
         cout << "Grade: D";
     else if (marks >= 0 && marks < 60)
-        cout << "Grade: F";
+        cout << "Grade: E";
     else
         cout << "Invalid marks";
 

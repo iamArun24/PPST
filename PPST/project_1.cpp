@@ -1,20 +1,43 @@
-// Add, Subtraction, Multiplication, Division, Remainder;
-#include <iostream> 
-#include <cmath>
+#include <iostream>
 using namespace std;
 
-int main(){
-    double a;
-    double b;
-    cout<< "Enter the number a;";
-    cin>>a;
-    cout<< "Enter the number b;";
-    cin>>b;    
-    cout<<"Addition;"<<a+b<<endl;
-    cout<<"Subtraction;"<<a-b<<endl;
-    cout<<"Multiplication;"<<a*b<<endl;
-    cout<<"Division;"<<a/b<<endl;
-    cout<<"Remainder;"<<fmod(a,b)<<endl;
+int main() {
+    double num1, num2;
+    char op;
 
-return 0;
+    while (true) {
+        cout << "\nEnter first number: ";
+        cin >> num1;
+        cout << "Enter operator: ";
+        cin >> op;
+        cout << "Enter second number: ";
+        cin >> num2;
+
+        switch (op) {
+            case '+':
+                cout << "Result = " << num1 + num2;
+                break;
+            case '-':
+                cout << "Result = " << num1 - num2;
+                break;
+            case '*':
+                cout << "Result = " << num1 * num2;
+                break;
+            case '/':
+                if (num2 != 0)
+                    cout << "Result = " << num1 / num2;
+                else
+                    cout << "Error: Division by zero!";
+                break;
+            case '%':
+                if ((int)num2 != 0)
+                    cout << "Remainder = " << (int)num1 % (int)num2;
+                else
+                    cout << "Error: Division by zero!";
+                break;
+            default:
+                cout << "Wrong operator entered. Calculator stopped.";
+                return 0; 
+        }
+    }
 }
