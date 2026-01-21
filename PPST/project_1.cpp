@@ -5,7 +5,10 @@ using namespace std;
 int main(){
     double a;
     double b;
-    cin>>a>>b;
+    cout<< "Enter the number a;";
+    cin>>a;
+    cout<< "Enter the number b;";
+    cin>>b;
 
 // Add, Substraction, Multiplication, Division, Remainder;
     
