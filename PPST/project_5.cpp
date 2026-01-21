@@ -1,4 +1,4 @@
-// Minimum of two Numbers
+// Minimum of Three Numbers
 #include <iostream>
 using namespace std;
 
