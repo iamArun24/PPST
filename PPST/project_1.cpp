@@ -1,3 +1,4 @@
+// Add, Subtraction, Multiplication, Division, Remainder.
 #include <iostream>
 using namespace std;
 
@@ -8,6 +9,7 @@ int main() {
     while (true) {
         cout << "\nEnter first number: ";
         cin >> num1;
+
         cout << "Enter operator: ";
         cin >> op;
         cout << "Enter second number: ";
